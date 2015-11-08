@@ -6,6 +6,17 @@ Click through the link at the bottom of each problem to see the solution.
 
 ## Internet Protocols
 
+#### 1. Overview
+
+If I type https://google.com into my browser and press enter, what happens?
+
+[See the answer]()
+
+What is CORS?
+
+[See the answer]()
+
+
 ## JavaScript
 
 #### 1. String manipulation
@@ -45,8 +56,6 @@ How would you ensure that the context of func() is always bound to Userso that 1
 
 ## Algorithms
 
-### Sorts
-
 #### Bubble Sort
 
 What is the complexity of the bubble sort algorithm? Use Big-O notation.
@@ -71,6 +80,15 @@ What is the complexity of the quick sort algorithm? Use Big-O notation.
 Implement it.
 
 [See the answer](solutions/algorithms/quick-sort.js)
+
+
+#### Binary Search
+
+What is the complexity of a binary search? Use Big-O notation.
+
+Implement it.
+
+[See the answer](solutions/algorithms/binary-search.js)
 
 ## Logic / Brain Teasers
 
@@ -144,5 +162,20 @@ Write a function that finds all pairs of integers in an integer array that sum t
 
 
 ## Systems Design
+
+#### REST API Design
+
+Image that you are in charge of designing an API for Twitter. This API will be used by a developer building a 3rd party Twitter client. What actions would you expose and what HTTP method would you use for each?
+
+[See a sample answer]()
+
+#### URL Shortening
+
+Design a URL shortening service like bit.ly. Touch upon each of the following:
+    - The service's database architecture
+    - The service's API
+    - The service's frontend web app
+
+[See a sample answer]()
 
 ## Application Security
