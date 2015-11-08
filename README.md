@@ -6,15 +6,19 @@ Click through the link at the bottom of each problem to see the solution.
 
 ## Internet Protocols
 
-#### 1. Overview
+#### 1. General Questions
 
 If I type https://google.com into my browser and press enter, what happens?
 
 [See the answer]()
 
-What is CORS?
+How do you optimize the front-end performance of a JavaScript web application?
 
-[See the answer]()
+#### Cross-Domain Issues
+
+What is the difference between CORS and JSONP? Under what circummstances would you use each?
+
+[See the answer](http://stackoverflow.com/a/12309651/2117153)
 
 
 ## JavaScript
@@ -183,3 +187,10 @@ Design a URL shortening service like bit.ly. Touch upon each of the following:
 [See a sample answer]()
 
 ## Application Security
+
+
+#### Cross Site Scripting
+
+What is XSS and what does the acronym stand for? How is the exploit accomplished and what is its potential impact? How can it be mitigated?
+
+[See a sample answer](solutions/appsec/xss.md)
