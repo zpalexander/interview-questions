@@ -38,4 +38,4 @@ Any of these could be talked about at length.
 
 
 ---
-Bonus points to any candidates who talk about performance benchmarking code, server side vs. client side rendering, Google Page Speed or building page speed benchmarks into CI.
+Bonus points to any candidates who talk about performance benchmarking code, server side vs. client side rendering, Google Page Speed or building page speed benchmarks into CI. Also bonus points to any candidates who can talk about performance optimization within a specific framework.

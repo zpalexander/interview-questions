@@ -56,7 +56,7 @@ var func = User.getCount;
 console.log(func());
 ```
 
-How would you ensure that the context of func() is always bound to Userso that 1 will be returned?
+How would you ensure that the context of func() is always bound to User such that 1 will be returned?
 
 
 [See the answer](solutions/javascript/scope.js)
