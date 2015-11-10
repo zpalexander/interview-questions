@@ -2,7 +2,7 @@
 
 This repository is a compilation of useful interview questions for web developers.
 
-Click through the link at the bottom of each problem to see the solution.
+Click through the link at the bottom of each problem to see the solution. All solutions are implemented in JavaScript.
 
 ## General Questions
 
@@ -16,7 +16,7 @@ If I type https://google.com into my browser and press enter, what happens?
 
 How do you optimize the front-end performance of a JavaScript web application?
 
-[See a sample answer]()
+[See a sample answer](solutions/general/frontend-perf.md)
 
 #### 3. Cross-Domain Issues
 
