@@ -4,17 +4,21 @@ This repository is a compilation of useful interview questions for web developer
 
 Click through the link at the bottom of each problem to see the solution.
 
-## Internet Protocols
+## General Questions
 
-#### 1. General Questions
+#### 1. Internet Protocols
 
 If I type https://google.com into my browser and press enter, what happens?
 
-[See the answer]()
+[See a sample answer](http://stackoverflow.com/a/2092602/2117153)
+
+#### 2. Front-end Performace
 
 How do you optimize the front-end performance of a JavaScript web application?
 
-#### Cross-Domain Issues
+[See a sample answer]()
+
+#### 3. Cross-Domain Issues
 
 What is the difference between CORS and JSONP? Under what circummstances would you use each?
 
@@ -60,7 +64,7 @@ How would you ensure that the context of func() is always bound to Userso that 1
 
 ## Algorithms
 
-#### Bubble Sort
+#### 1. Bubble Sort
 
 What is the complexity of the bubble sort algorithm? Use Big-O notation.
 
@@ -69,7 +73,7 @@ Implement it.
 [See the answer](solutions/algorithms/bubble-sort.js)
 
 
-#### Merge Sort
+#### 2. Merge Sort
 
 What is the complexity of the merge sort algorithm? Use Big-O notation.
 
@@ -77,7 +81,7 @@ Implement it.
 
 [See the answer](solutions/algorithms/merge-sort.js)
 
-#### Quick Sort
+#### 3. Quick Sort
 
 What is the complexity of the quick sort algorithm? Use Big-O notation.
 
@@ -86,7 +90,7 @@ Implement it.
 [See the answer](solutions/algorithms/quick-sort.js)
 
 
-#### Binary Search
+#### 4. Binary Search
 
 What is the complexity of a binary search? Use Big-O notation.
 
@@ -167,7 +171,7 @@ Write a function that finds all pairs of integers in an integer array that sum t
 
 ## Systems Design
 
-#### REST API Design
+#### 1. REST API Design
 
 Image that you are building Twitter. In particular, you are in charge of designing an API for Twitter's backend. This API will be used by a developer building a 3rd party Twitter client. What actions would you expose and what HTTP method would you use for each?
 
@@ -177,7 +181,7 @@ What are some ways you could scale your Twitter service to
 
 [See a sample answer]()
 
-#### URL Shortening
+#### 2. URL Shortening
 
 Design a URL shortening service like bit.ly. Touch upon each of the following:
     - The service's database architecture
@@ -189,8 +193,27 @@ Design a URL shortening service like bit.ly. Touch upon each of the following:
 ## Application Security
 
 
-#### Cross Site Scripting
+#### 1. Cross Site Scripting
 
-What is XSS and what does the acronym stand for? How is the exploit accomplished and what is its potential impact? How can it be mitigated?
+What is XSS and what does the acronym stand for? How is the exploit executed and what is its potential impact? How can it be mitigated?
 
 [See a sample answer](solutions/appsec/xss.md)
+
+#### 2. SQL Injection
+
+What is SQL Injection? How is the exploit executed and what is its potential impact? How can it be mitigated?
+
+[See a sample answer](https://www.owasp.org/index.php/SQL_Injection)
+
+#### 3. Cross-site Request Forgery
+
+Imagine that we have an online baking app protected by a login. Once a user has logged in, they're given a session cookie that they must have in order to send HTTP requests to the rest of the app.
+
+For simplicity's sake, assume that the main dashboard page consists of nothing but a form that allows the user to send money to other users.
+The app has two fields - a dollar amount field and a username field - and a submit button.
+Submitting the form hits the following endpoint of the bank's backend API at `https://www.example.com/transfer?amount=1000&destination=desiredUser`, which gets the current user, queries the database to make sure the user has enough money to send the transaction, and then updates the sender's and `desiredUser` balances in the DB.
+    - What security flaw exists in this system?
+    - Can you elaborate on how precisely the user would exploit this flaw to steal money from a user?
+    - How could this flaw be mitigated?
+
+[See a sample answer](solutions/appsec/csrf.md)
