@@ -128,7 +128,7 @@ Write a function that flattens a multi-dimensional array of unknown depth and co
 
 Pascal's triangle is a triangular array of the binomial coefficients. This means that in Pascal's triangle, each number is the sum of the two directly above it. Here's an illustration:
 
-
+![pascal's triangle](http://www.mathsisfun.com/images/pascals-triangle-4.gif)
 
 Write a function that prints row N of Pascal's triangle.
 
