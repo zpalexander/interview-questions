@@ -1,0 +1,24 @@
+{
+  "name": "interview-prep",
+  "version": "1.0.0",
+  "description": "Sample technical interview questions for web developers",
+  "main": "README.md",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zpalexander/interview-questions.git"
+  },
+  "author": "Zach Alexander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zpalexander/interview-questions/issues"
+  },
+  "homepage": "https://github.com/zpalexander/interview-questions#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "expect": "^1.13.4",
+    "mocha": "^2.3.4"
+  }
+}

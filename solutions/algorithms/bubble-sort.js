@@ -4,7 +4,7 @@
 
 // Complexity O(n^2)
 
-function bubbleSort(arr) {
+export default function bubbleSort(arr) {
     var isSorted = false;
     while (!isSorted) {
         var swaps = 0;

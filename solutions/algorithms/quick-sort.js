@@ -4,7 +4,7 @@
 
 // Complexity O(n log(n))
 
-function quickSort(unsortedArray) {
+export default function quickSort(unsortedArray) {
     if (unsortedArray.length < 2) {
         return unsortedArray;
     }

@@ -4,7 +4,7 @@
 
 // Complexity O(n log(n))
 
-function mergeSort(unsortedArray) {
+export default function mergeSort(unsortedArray) {
     if (unsortedArray.length < 2) {
         return unsortedArray;
     }
@@ -18,8 +18,7 @@ function mergeSort(unsortedArray) {
         var x;
         if (lowerHalf[0] > upperHalf[0]) {
             x = upperHalf.shift();
-        }
-        else {
+        } else {
             x = lowerHalf.shift();
         }
         sortedArray.push(x);
