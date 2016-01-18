@@ -61,6 +61,12 @@ How would you ensure that the context of func() is always bound to User such tha
 
 [See the answer](solutions/javascript/scope.js)
 
+#### 4. More String Manipulation
+
+Implement an algorithm to determine if a string has all unique characters.
+
+[See the answer](solutions/javascript/string-manipulation.js)
+
 
 ## Algorithms
 
