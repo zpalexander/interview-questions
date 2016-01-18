@@ -4,7 +4,7 @@
  */
 
 /* Main Method */
-var hasAllUniques = function(str) {
+export function hasAllUniques(str) {
     if (str.length < 2) {
         return true;
     }
@@ -33,10 +33,3 @@ HashTable.prototype.add = function(newVal) {
         return false;
     }
 };
-
-
-/* Test */
-console.log('***Should be true:***');
-console.log(hasAllUniques('abcdefg'));
-console.log('***Should be false:***');
-console.log(hasAllUniques('abcda'));

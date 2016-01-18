@@ -3,6 +3,6 @@
  * and returns the same string, but with each character separated by a space.
  */
 
-function spacify(str) {
+export default function spacify(str) {
     return str.split('').join(' ');
 }
