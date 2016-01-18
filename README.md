@@ -14,7 +14,7 @@ If I type https://google.com into my browser and press enter, what happens?
 
 #### 2. Front-end Performace
 
-How do you optimize the front-end performance of a JavaScript web application?
+How would you go about optimizing the front-end performance of a JavaScript web application?
 
 [See a sample answer](solutions/general/frontend-perf.md)
 
