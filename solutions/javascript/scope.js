@@ -16,7 +16,7 @@ console.log(func());            // Prints undefined
 
 /**
  * How would you ensure that the context of func() is always
- * bound to Userso that 1 will be returned?
+ * bound to User so that 1 will be returned?
  */
 
 var func = User.getCount.bind(User);

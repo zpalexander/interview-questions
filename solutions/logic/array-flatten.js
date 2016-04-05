@@ -3,7 +3,9 @@
  * depth and composition into a one-dimensional array.
  */
 
-var flattenArray = function(input) {
+
+// Imperative solution
+var flattenArrayImperative = function(input) {
     var output = [];
     for (var i=0; i<input.length; i++) {
         // If the index is a nested array, recurse into it
@@ -18,4 +20,11 @@ var flattenArray = function(input) {
         }
     }
     return output;
-}
+};
+
+// Functional solution
+var flattenArrayFunctional = function(arr) {
+    return arr.reduce(function(flat, toFlatten) {
+        return flat.concat(Array.isArray(toFlatten) ? flatten(toFlatten) : toFlatten);
+    }, []);
+};

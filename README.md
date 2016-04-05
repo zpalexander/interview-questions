@@ -104,6 +104,25 @@ Implement it.
 
 [See the answer](solutions/algorithms/binary-search.js)
 
+#### 5. Linked Lists
+
+Given the following implementation of a Linked List node:
+
+```
+function Node(data) {
+    this.data = data;
+    this.next = null;
+}
+```
+
+Write code to remove duplicates from an unsorted linked list given the first node in the list.
+
+[See the answer](solutions/algorithms/linked-list.js)
+
+FOLLOW UP: How would you do this without access to a buffer?
+
+
+
 ## Logic / Brain Teasers
 
 #### 1. Fizzbuzz
@@ -124,13 +143,23 @@ Write a function to check if a string is a pallindrome.
 
 [See the answer](solutions/logic/pallindrome.js)
 
-#### 3. Array Flatten
+#### 3. Array Reverse
+
+Write a function to reverse an array.
+
+Now do it without using any array API methods.
+
+Now do it without a buffer.
+
+[See the answer](solutions/logic/array-reverse.js)
+
+#### 4. Array Flatten
 
 Write a function that flattens a multi-dimensional array of unknown depth and composition into a one-dimensional array.
 
 [See the answer](solutions/logic/array-flatten.js)
 
-#### 4. Pascal's Triangle
+#### 5. Pascal's Triangle
 
 Pascal's triangle is a triangular array of the binomial coefficients. This means that in Pascal's triangle, each number is the sum of the two directly above it. Here's an illustration:
 
@@ -140,7 +169,7 @@ Write a function that prints row N of Pascal's triangle.
 
 [See the answer](solutions/logic/pascals-triangle.js)
 
-#### 5. Fibonacci
+#### 6. Fibonacci
 
 The Fibonacci sequence is a series of numbers where each number in the sequence is the sum of the previous two numbers. For this question, assume that the sequence starts with the number 0. The first ten numbers of the sequence look like this:
 
@@ -155,20 +184,20 @@ The second function should use a recursive method.
 [See the answer](solutions/logic/fibonacci.js)
 
 
-#### 6. Duplicate Characters
+#### 7. Duplicate Characters
 
 Write a function that removes any duplicate characters from a string.
 
 [See the answer](solutions/logic/remove-dupes.js)
 
 
-#### 7. Greatest Prime Factor
+#### 8. Greatest Prime Factor
 
 Write a function that finds the greatest prime factor of a number n.
 
 [See the answer](solutions/logic/largest-prime-factor.js)
 
-#### 8. Finding Sum Pairs
+#### 9. Finding Sum Pairs
 
 Write a function that finds all pairs of integers in an integer array that sum to n
 
