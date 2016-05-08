@@ -203,6 +203,16 @@ Write a function that finds all pairs of integers in an integer array that sum t
 
 [See the answer](solutions/logic/sum-pairs.js)
 
+#### 10. Monitoring Frankenzombie
+
+The evil Professor Boolean, after years of hard work, has finally created his first successful Frankenzombie specimen. In order to understand the creature, the professor has tasked his minions with monitoring it.
+
+Unfortunately, Professor Boolean's minions are a bit disorganized. There may be times when more than one minion is monitoring at once! Thankfully, the minions are at least organized enough to clock their hours.
+
+Write a function that takes a list of pairs `[start, end]` and returns the total number of hours that Frankenzombie was monitored. All values `start` and `end` are greater than zero and no greater than 2^30-1. `end` will always be greater than `start`.
+
+[See the answer](solutions/logic/frankenzombie.js)
+
 
 ## Systems Design
 
