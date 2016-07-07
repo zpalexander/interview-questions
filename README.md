@@ -127,9 +127,10 @@ Given the following implementation of a binary tree node:
 
 ```javascript
 function TreeNode(val) {
-    this.val = val;
-    this.left = this.right = null;
-    return this;
+    let node = {};
+    node.val = val;
+    node.left = node.right = null;
+    return node;
 }
 ```
 
