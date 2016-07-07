@@ -6,6 +6,7 @@
  * are greater than zero and no greater than 2^30-1. `end` will always be greater than `start`.
  */
 
+/* Logic */
 export function totalTime(list) {
     // Initialize working variables
     let total = 0;
@@ -19,6 +20,7 @@ export function totalTime(list) {
 }
 
 
+/* Subroutines */
 function mergeTimecards(sortedList) {
     let mergedList = [];
     mergedList.push(sortedList.shift());
@@ -45,7 +47,6 @@ function mergeTimecards(sortedList) {
 function mergeOverlappingTimes(a, b) {
     return [a[0], b[1]];
 }
-
 
 function compareTimecards(a, b) {
     if (a[0] < b[0]) {

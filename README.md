@@ -108,7 +108,7 @@ Implement it.
 
 Given the following implementation of a Linked List node:
 
-```
+```javascript
 function Node(data) {
     this.data = data;
     this.next = null;
@@ -121,6 +121,19 @@ Write code to remove duplicates from an unsorted linked list given the first nod
 
 FOLLOW UP: How would you do this without access to a buffer?
 
+#### 6. Binary Tree Inversion
+
+Given the following implementation of a binary tree node:
+
+```javascript
+function TreeNode(val) {
+    this.val = val;
+    this.left = this.right = null;
+    return this;
+}
+```
+
+Write a function that takes the root element of the tree and inverts the tree.
 
 
 ## Logic / Brain Teasers
@@ -209,7 +222,7 @@ The evil Professor Boolean, after years of hard work, has finally created his fi
 
 Unfortunately, Professor Boolean's minions are a bit disorganized. There may be times when more than one minion is monitoring at once! Thankfully, the minions are at least organized enough to clock their hours.
 
-Write a function that takes a list of pairs `[start, end]` and returns the total number of hours that Frankenzombie was monitored. All values `start` and `end` are greater than zero and no greater than 2^30-1. `end` will always be greater than `start`.
+Write a function that takes a list of minion timesheets `[start, end]` and returns the total number of hours that Frankenzombie was monitored. All values `start` and `end` are greater than zero and no greater than 2^30-1. `end` will always be greater than `start`.
 
 [See the answer](solutions/logic/frankenzombie.js)
 
