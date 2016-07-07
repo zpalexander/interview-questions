@@ -135,6 +135,8 @@ function TreeNode(val) {
 
 Write a function that takes the root element of the tree and inverts the tree.
 
+[See the answer](solutions/algorithms/binary-tree-inversion.js)
+
 
 ## Logic / Brain Teasers
 
