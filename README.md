@@ -138,6 +138,12 @@ Write a function that takes the root element of the tree and inverts the tree.
 
 [See the answer](solutions/algorithms/binary-tree-inversion.js)
 
+#### 7. Breadth First Search
+
+Given a graph represented as an adjacency list and the node to start with, return an array of the graph's nodes in depth first order
+
+[See the answer](solutions/algorithms/breadth-first-search.js)
+
 
 ## Logic / Brain Teasers
 
