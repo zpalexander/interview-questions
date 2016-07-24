@@ -3,10 +3,10 @@
  */
 
 var User = {
-    count: 1,
-    getCount: function() {
-        return this.count;
-    }
+  count: 1,
+  getCount: function() {
+    return this.count;
+  }
 };
 
 console.log(User.getCount());   // Prints 1

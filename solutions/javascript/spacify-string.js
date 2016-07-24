@@ -4,7 +4,7 @@
  */
 
 String.prototype.spacify = function() {
-    return this.split('').join(' ');
+  return this.split('').join(' ');
 }
 
 // Developers should never modify JavaScript native prototypes.

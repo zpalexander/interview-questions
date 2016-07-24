@@ -1,0 +1,8 @@
+{
+  "extends": "airbnb",
+  "esversion": 6,
+  "env": {
+    "mocha": true
+  },
+  "capIsNew": false
+}

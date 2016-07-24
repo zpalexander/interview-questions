@@ -4,5 +4,5 @@
  */
 
 export default function spacify(str) {
-    return str.split('').join(' ');
+  return str.split('').join(' ');
 }
