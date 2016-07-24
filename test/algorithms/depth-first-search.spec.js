@@ -1,11 +1,11 @@
 /**
- * breadth-first-search.spec.js
+ * depth-first-search.spec.js
  *
- * Test harness for breadth first search
+ * Test harness for depth first search
  */
 /* Dependencies  */
 import expect from 'expect';
-import bfs from '../../solutions/algorithms/breadth-first-search.js';
+import dfs from '../../solutions/algorithms/depth-first-search.js';
 
 /* Test Cases */
 describe('Algorithms: Breadth First Search', () => {
@@ -23,8 +23,8 @@ describe('Algorithms: Breadth First Search', () => {
     ];
 
     it('should visit nodes in order', () => {
-        const expectedResult = [0, 1, 3, 8, 7, 2, 4, 5, 6];
-        expect(bfs(sampleGraph, 0)).toEqual(expectedResult);
+        const expectedResult = [0, 1, 7, 3, 2, 5, 6, 4, 8];
+        expect(dfs(sampleGraph, 0)).toEqual(expectedResult);
     });
 
 });

@@ -1,10 +1,10 @@
 /**
- * depth-first-search.js
+ * breadth-first-search.js
  *
  * Given a graph represented as an adjacency list
  * and the node to start with,
  * return an array of the graph's nodes in
- * depth first order
+ * breadth first order
  */
 import Queue from '../../test/helpers/Queue';
 
