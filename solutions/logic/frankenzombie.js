@@ -7,7 +7,7 @@
  */
 
 /* Logic */
-export default function totalTime(list) {
+export function totalTime(list) {
   // Initialize working variables
   let total = 0;
   const mergedSortedTimecards = mergeTimecards(list.sort(compareTimecards));

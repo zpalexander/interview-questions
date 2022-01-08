@@ -43,7 +43,7 @@ Create the same `spacify` function, but add it directly as a method to the `Stri
 
 What will the result of the following be?
 
-```javascript
+```
 var User = {
     count: 1,
     getCount: function() {
@@ -108,7 +108,7 @@ Implement it.
 
 Given the following implementation of a Linked List node:
 
-```javascript
+```
 function Node(data) {
     this.data = data;
     this.next = null;
@@ -125,7 +125,7 @@ FOLLOW UP: How would you do this without access to a buffer?
 
 Given the following implementation of a binary tree node:
 
-```javascript
+```
 function TreeNode(val) {
     let node = {};
     node.val = val;
@@ -234,6 +234,14 @@ Unfortunately, Professor Boolean's minions are a bit disorganized. There may be 
 Write a function that takes a list of minion timesheets `[start, end]` and returns the total number of hours that Frankenzombie was monitored. All values `start` and `end` are greater than zero and no greater than 2^30-1. `end` will always be greater than `start`.
 
 [See the answer](solutions/logic/frankenzombie.js)
+
+#### 11. Combination Sum
+
+Given an array of distinct integers `candidates` and a target integer `target`, return a list of all unique combinations of `candidates` values where the chosen values sum to `target`.
+
+A candidate can be reused an unlimited number of times in a combination that sums to the `target`, e.g. if candidates is `[2]` and target is 4, `[[2,2]]` is an acceptable answer.
+
+[See the answer](solutions/logic/combination-sum.js)
 
 
 ## Systems Design
