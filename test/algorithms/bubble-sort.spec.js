@@ -5,7 +5,6 @@
  */
 
 /* Dependencies */
-import expect from 'expect';
 import bubbleSort from '../../solutions/algorithms/bubble-sort';
 
 /* Test Cases */

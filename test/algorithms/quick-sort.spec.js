@@ -5,7 +5,6 @@
  */
 
 /* Dependencies */
-import expect from 'expect';
 import quickSort from '../../solutions/algorithms/quick-sort';
 
 /* Test Cases */

@@ -4,7 +4,6 @@
  * Test harness for Pascal's Triangle problem
  */
 /* Dependencies */
-import expect from 'expect';
 import pascalsTriangle from '../../solutions/logic/pascals-triangle';
 
 /* Test Cases */

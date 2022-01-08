@@ -5,7 +5,6 @@
  */
 
 /* Dependencies */
-import expect from 'expect';
 import invertTree from '../../solutions/algorithms/binary-tree-inversion';
 
 /* Helpers */

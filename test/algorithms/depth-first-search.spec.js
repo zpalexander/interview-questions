@@ -4,7 +4,6 @@
  * Test harness for depth first search
  */
 /* Dependencies  */
-import expect from 'expect';
 import dfs from '../../solutions/algorithms/depth-first-search.js';
 
 /* Test Cases */

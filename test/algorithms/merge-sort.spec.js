@@ -5,7 +5,6 @@
  */
 
 /* Dependencies */
-import expect from 'expect';
 import mergeSort from '../../solutions/algorithms/merge-sort';
 
 /* Test Cases */

@@ -4,7 +4,6 @@
  * Test harness for breadth first search
  */
 /* Dependencies  */
-import expect from 'expect';
 import bfs from '../../solutions/algorithms/breadth-first-search.js';
 
 /* Test Cases */

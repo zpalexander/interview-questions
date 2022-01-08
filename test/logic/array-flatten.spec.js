@@ -4,7 +4,6 @@
  * Test harness for array flatten functions
  */
 /* Dependencies */
-import expect from 'expect';
 import { flattenArrayImperative, flattenArrayFunctional } from '../../solutions/logic/array-flatten';
 
 /* Test Cases */

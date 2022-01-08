@@ -5,7 +5,6 @@
  */
 
 /* Dependencies */
-import expect from 'expect';
 import binarySearch from '../../solutions/algorithms/binary-search';
 
 /* Test Cases */

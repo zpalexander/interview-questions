@@ -4,7 +4,6 @@
  * Test harness for fibonacci functions
  */
 /* Dependencies */
-import expect from 'expect';
 import { fibonacciIterative, fibonacciRecursive } from '../../solutions/logic/fibonacci';
 
 /* Test Cases */

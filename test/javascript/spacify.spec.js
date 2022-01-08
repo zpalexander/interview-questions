@@ -5,7 +5,6 @@
  */
 
 /* Dependencies */
-import expect from 'expect';
 import spacify from '../../solutions/javascript/spacify';
 
 /* Test Cases */

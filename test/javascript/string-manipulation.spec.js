@@ -5,7 +5,6 @@
  */
 
 /* Dependencies */
-import expect from 'expect';
 import { hasAllUniques } from '../../solutions/javascript/string-manipulation';
 
 /* Test Cases */

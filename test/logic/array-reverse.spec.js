@@ -5,7 +5,6 @@
  */
 
 /* Dependencies */
-import expect from 'expect';
 import { reverseArray, reverseArrayBuffer, reverseArrayInplace } from '../../solutions/logic/array-reverse';
 
 /* Test Cases */

@@ -3,8 +3,6 @@
  *
  * Test harness for frankenzombie function
  */
-
-import expect from 'expect';
 import { totalTime } from '../../solutions/logic/frankenzombie';
 
 /* Test Cases */

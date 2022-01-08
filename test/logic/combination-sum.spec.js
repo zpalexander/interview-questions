@@ -1,4 +1,3 @@
-import expect from 'expect';
 import { combinationSum } from '../../solutions/logic/combination-sum';
 
 /* Test Cases */
