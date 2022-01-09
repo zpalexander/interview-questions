@@ -243,6 +243,26 @@ A candidate can be reused an unlimited number of times in a combination that sum
 
 [See the answer](solutions/logic/combination-sum.js)
 
+#### 12. N Degrees of Separation
+
+Imagine you work on a social network. People in the social network are represented as objects, where each object has the following properties:
+
+```
+// Person
+
+getFriends() // returns an array of other Person objects who are direct friends with the person
+getId()      // returns a unique string ID representing the person
+
+```
+
+The social network wants to add a new feature inspired by "6 degrees of separation". They want to be able to tell any user how many degrees of separation they are away from someone else in the social network.
+
+For example, A "1" means they're directly connected (that is, A is friends with B), a "2" means there is 1 mutual friend (e.g., A and B are both friends with C). A "-1" means the two friends are not connected.
+
+Write a function that can determine the degrees of separation between two people in the social network.
+
+[See the answer](solutions/logic/n-degrees-of-separation.js)
+
 
 ## Systems Design
 
