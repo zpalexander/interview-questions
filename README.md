@@ -179,6 +179,16 @@ You can't take course 1 without taking course 0, and you can't take course 0 wit
 
 [See the answer](solutions/algorithms/course-schedule.js)
 
+#### 9. Number of Islands
+
+Given a 2d array where all values are 1's (land) and 0's (water), return the number of islands;
+
+An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically.
+
+Assume that anything surrounding the 2d array is water.
+
+[See the answer](solutions/algorithms/number-of-islands.js)
+
 
 ## Logic / Brain Teasers
 
