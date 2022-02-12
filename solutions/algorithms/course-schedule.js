@@ -1,58 +1,53 @@
 export function courseSchedule(numCourses, prerequisites) {
-    // The schedule is a directed graph
+    const prerequisitesMap = {};
+    const visitedSet = [];
 
-    // When would the course schedule be invalid?
-    // Circular dependencies aka cycle in the graph
-
-
-    // First build an adjacency hashmap
-    const prerequisiteMap = {};
-    const visitedSet = {};
-
-    // Instantiate an empty dependency list for each course to start
+    // Set up an adjacency map so we can see all required courses
+    // for a given course.
     for (let courseNumber = 0; courseNumber < numCourses; courseNumber++) {
-        prerequisiteMap[`${courseNumber}`] = [];
-        visitedSet[`${courseNumber}`] = false;
+        prerequisitesMap[`${courseNumber}`] = [];
+        visitedSet[courseNumber] = false;
     }
 
-    // Then go through all prerequisites in the list and fill in prerequisites in the map
-    prerequisites.forEach(prerequisitePair => {
-        const course = prerequisitePair[0];
-        const prerequisite = prerequisitePair[1];
-        prerequisiteMap[`${course}`].push(prerequisite)
-    });
-
-    // Now we want to depth first search through each node
-    // to the starting courses, and then from there recursively make sure
-    // that each course is valid and can be completed
-    function dfsHelper(courseNumber) {
-        if (visitedSet[`${courseNumber}`] === true) {
-            return false;
-        }
-
-        if (prerequisiteMap[`${courseNumber}`].length === 0) {
-            return true;
-        }
-
-        visitedSet[`${courseNumber}`] = true;
-
-        const coursePrerequisites = prerequisiteMap[`${courseNumber}`];
-
-        for (let i = 0; i < coursePrerequisites.length; i++) {
-            if (!dfsHelper(coursePrerequisites[i])) {
-                return false;
-            }
-
-            visitedSet[`${courseNumber}`] = false;
-            prerequisiteMap[`${courseNumber}`] = [];
-            return true;
-        }
+    for (let prerequisiteIndex = 0; prerequisiteIndex < prerequisites.length; prerequisiteIndex++) {
+        const course = prerequisites[prerequisiteIndex][0];
+        const prerequisite = prerequisites[prerequisiteIndex][1];
+        prerequisitesMap[`${course}`].push(prerequisite);
     }
 
-    for (let i = 0; i < numCourses; i++) {
-        if (!dfsHelper(i)) {
-            return false;
+
+    // Now that we have each prerequisite mapped to its direct prerequisites
+    // search through all courses in the graph to make sure that each one
+    // can be completed based on whether or not its prerequisites can also
+    // be completed
+
+    function dfsHelper(course) {
+        // Base Case #1:
+        // If the course has already been visited, we have detected
+        // a circular dependency, which means the schedule cannot be completed
+        if (visitedSet[course] === true) return false;
+
+        // Base Case #2:
+        // If the course has no dependencies, we know it can always be
+        // completed no matter what
+        if (prerequisitesMap[`${course}`].length < 1) return true;
+
+        // If we get to here it means the course has prerequisites, so we want
+        // to mark the course as visited and search through its prerequisites
+        // until we hit our base cases
+        visitedSet[course] = true;
+        const coursePrerequisites = prerequisitesMap[`${course}`];
+        for (let prereqIndex = 0; prereqIndex < coursePrerequisites.length; prereqIndex ++) {
+            if (!dfsHelper(coursePrerequisites[prereqIndex])) return false;
         }
+
+        visitedSet[course] = false;
+        prerequisitesMap[`${course}`] = [];
+        return true;
+    }
+
+    for (let courseNumber = 0; courseNumber < numCourses; courseNumber++) {
+        if (!dfsHelper(courseNumber)) return false;
     }
 
     return true;
