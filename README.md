@@ -4,7 +4,7 @@ This repository is a compilation of useful interview questions for web developer
 
 Click through the link at the bottom of each problem to see the solution. All solutions are implemented in JavaScript.
 
-## General Questions
+## General Web Questions
 
 #### 1. Internet Protocols
 
@@ -16,7 +16,7 @@ If I type https://google.com into my browser and press enter, what happens?
 
 How would you go about optimizing the front-end performance of a JavaScript web application?
 
-[See a sample answer](solutions/general/frontend-perf.md)
+[See a sample answer](solutions/general-web/frontend-perf.md)
 
 #### 3. Cross-Domain Issues
 
@@ -60,12 +60,6 @@ How would you ensure that the context of func() is always bound to User such tha
 
 
 [See the answer](solutions/javascript/scope.js)
-
-#### 4. More String Manipulation
-
-Implement an algorithm to determine if a string has all unique characters.
-
-[See the answer](solutions/javascript/string-manipulation.js)
 
 
 ## Algorithms
@@ -144,106 +138,7 @@ Given a graph represented as an adjacency list and the node to start with, retur
 
 [See the answer](solutions/algorithms/breadth-first-search.js)
 
-
-## Logic / Brain Teasers
-
-#### 1. Fizzbuzz
-
-Write a function that prints the numbers from 1 to 100.
-
-For multiples of three print "Fizz" instead of the number.
-
-For multiples of five print "Buzz" instead of the number.
-
-For multiples of both three and five print "FizzBuzz".
-
-[See the answer](solutions/logic/fizzbuzz.js)
-
-#### 2. Palindromes
-
-Write a function to check if a string is a pallindrome.
-
-[See the answer](solutions/logic/pallindrome.js)
-
-#### 3. Array Reverse
-
-Write a function to reverse an array.
-
-Now do it without using any array API methods.
-
-Now do it without a buffer.
-
-[See the answer](solutions/logic/array-reverse.js)
-
-#### 4. Array Flatten
-
-Write a function that flattens a multi-dimensional array of unknown depth and composition into a one-dimensional array.
-
-[See the answer](solutions/logic/array-flatten.js)
-
-#### 5. Pascal's Triangle
-
-Pascal's triangle is a triangular array of the binomial coefficients. This means that in Pascal's triangle, each number is the sum of the two directly above it. Here's an illustration:
-
-![pascal's triangle](http://www.mathsisfun.com/images/pascals-triangle-4.gif)
-
-Write a function that prints row N of Pascal's triangle.
-
-[See the answer](solutions/logic/pascals-triangle.js)
-
-#### 6. Fibonacci
-
-The Fibonacci sequence is a series of numbers where each number in the sequence is the sum of the previous two numbers. For this question, assume that the sequence starts with the number 0. The first ten numbers of the sequence look like this:
-
-`0, 1, 1, 2, 3, 5, 8, 13, 21, 34`
-
-Write two functions to compute the n'th number of the Fibonacci sequence.
-
-The first function should use an iterative method.
-
-The second function should use a recursive method.
-
-[See the answer](solutions/logic/fibonacci.js)
-
-
-#### 7. Duplicate Characters
-
-Write a function that removes any duplicate characters from a string.
-
-[See the answer](solutions/logic/remove-dupes.js)
-
-
-#### 8. Greatest Prime Factor
-
-Write a function that finds the greatest prime factor of a number n.
-
-[See the answer](solutions/logic/largest-prime-factor.js)
-
-#### 9. Finding Sum Pairs
-
-Write a function that finds all pairs of integers in an integer array that sum to n
-
-[See the answer](solutions/logic/sum-pairs.js)
-
-#### 10. Monitoring Frankenzombie
-
-The evil Professor Boolean, after years of hard work, has finally created his first successful Frankenzombie specimen. In order to understand the creature, the professor has tasked his minions with monitoring it.
-
-Unfortunately, Professor Boolean's minions are a bit disorganized. There may be times when more than one minion is monitoring at once! Thankfully, the minions are at least organized enough to clock their hours.
-
-Write a function that takes a list of minion timesheets `[start, end]` and returns the total number of hours that Frankenzombie was monitored. All values `start` and `end` are greater than zero and no greater than 2^30-1. `end` will always be greater than `start`.
-
-[See the answer](solutions/logic/frankenzombie.js)
-
-#### 11. Combination Sum
-
-Given an array of distinct integers `candidates` and a target integer `target`, return a list of all unique combinations of `candidates` values where the chosen values sum to `target`.
-
-A candidate can be reused an unlimited number of times in a combination that sums to the `target`, e.g. if candidates is `[2]` and target is 4, `[[2,2]]` is an acceptable answer.
-
-[See the answer](solutions/logic/combination-sum.js)
-
-#### 12. N Degrees of Separation
+#### 8. N Degrees of Separation
 
 Imagine you work on a social network. People in the social network are represented as objects, where each object has the following properties:
 
@@ -261,9 +156,106 @@ For example, A "1" means they're directly connected (that is, A is friends with 
 
 Write a function that can determine the degrees of separation between two people in the social network.
 
-[See the answer](solutions/logic/n-degrees-of-separation.js)
+[See the answer](solutions/algorithms/n-degrees-of-separation.js)
 
-#### 13. Sum Pairs
+#### 9. Combination Sum
+
+Given an array of distinct integers `candidates` and a target integer `target`, return a list of all unique combinations of `candidates` values where the chosen values sum to `target`.
+
+A candidate can be reused an unlimited number of times in a combination that sums to the `target`, e.g. if candidates is `[2]` and target is 4, `[[2,2]]` is an acceptable answer.
+
+[See the answer](solutions/algorithms/combination-sum.js)
+
+
+## Logic / Brain Teasers
+
+#### 1. Fizzbuzz
+
+Write a function that prints the numbers from 1 to 100.
+
+For multiples of three print "Fizz" instead of the number.
+
+For multiples of five print "Buzz" instead of the number.
+
+For multiples of both three and five print "FizzBuzz".
+
+[See the answer](solutions/logic/fizzbuzz.js)
+
+#### 2. All Unique Characters
+
+Implement an algorithm to determine if a string has all unique characters.
+
+[See the answer](solutions/logic/string-manipulation.js)
+
+#### 3. Palindromes
+
+Write a function to check if a string is a pallindrome.
+
+[See the answer](solutions/logic/pallindrome.js)
+
+#### 4. Array Reverse
+
+Write a function to reverse an array.
+
+Now do it without using any array API methods.
+
+Now do it without a buffer.
+
+[See the answer](solutions/logic/array-reverse.js)
+
+#### 5. Array Flatten
+
+Write a function that flattens a multi-dimensional array of unknown depth and composition into a one-dimensional array.
+
+[See the answer](solutions/logic/array-flatten.js)
+
+#### 6. Pascal's Triangle
+
+Pascal's triangle is a triangular array of the binomial coefficients. This means that in Pascal's triangle, each number is the sum of the two directly above it. Here's an illustration:
+
+![pascal's triangle](http://www.mathsisfun.com/images/pascals-triangle-4.gif)
+
+Write a function that prints row N of Pascal's triangle.
+
+[See the answer](solutions/logic/pascals-triangle.js)
+
+#### 7. Fibonacci
+
+The Fibonacci sequence is a series of numbers where each number in the sequence is the sum of the previous two numbers. For this question, assume that the sequence starts with the number 0. The first ten numbers of the sequence look like this:
+
+`0, 1, 1, 2, 3, 5, 8, 13, 21, 34`
+
+Write two functions to compute the n'th number of the Fibonacci sequence.
+
+The first function should use an iterative method.
+
+The second function should use a recursive method.
+
+[See the answer](solutions/logic/fibonacci.js)
+
+#### 8. Duplicate Characters
+
+Write a function that removes any duplicate characters from a string.
+
+[See the answer](solutions/logic/remove-dupes.js)
+
+#### 9. Greatest Prime Factor
+
+Write a function that finds the greatest prime factor of a number n.
+
+[See the answer](solutions/logic/largest-prime-factor.js)
+
+#### 10. Monitoring Frankenzombie
+
+The evil Professor Boolean, after years of hard work, has finally created his first successful Frankenzombie specimen. In order to understand the creature, the professor has tasked his minions with monitoring it.
+
+Unfortunately, Professor Boolean's minions are a bit disorganized. There may be times when more than one minion is monitoring at once! Thankfully, the minions are at least organized enough to clock their hours.
+
+Write a function that takes a list of minion timesheets `[start, end]` and returns the total number of hours that Frankenzombie was monitored. All values `start` and `end` are greater than zero and no greater than 2^30-1. `end` will always be greater than `start`.
+
+[See the answer](solutions/logic/frankenzombie.js)
+
+#### 11. Sum Pairs
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
@@ -292,7 +284,6 @@ Example 3:
 Input: nums = [3,3], target = 6
 Output: [0,1]
 ```
-
 
 [See the answer](solutions/logic/sum-pairs.js)
 
@@ -343,8 +334,8 @@ Design a URL shortening service like bit.ly. Touch upon each of the following:
 
 [See a sample answer]()
 
-## Application Security
 
+## Application Security
 
 #### 1. Cross Site Scripting
 
