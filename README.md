@@ -64,33 +64,7 @@ How would you ensure that the context of func() is always bound to User such tha
 
 ## Algorithms
 
-#### 1. Bubble Sort
-
-What is the complexity of the bubble sort algorithm? Use Big-O notation.
-
-Implement it.
-
-[See the answer](solutions/algorithms/bubble-sort.js)
-
-
-#### 2. Merge Sort
-
-What is the complexity of the merge sort algorithm? Use Big-O notation.
-
-Implement it.
-
-[See the answer](solutions/algorithms/merge-sort.js)
-
-#### 3. Quick Sort
-
-What is the complexity of the quick sort algorithm? Use Big-O notation.
-
-Implement it.
-
-[See the answer](solutions/algorithms/quick-sort.js)
-
-
-#### 4. Binary Search
+#### 1. Binary Search
 
 What is the complexity of a binary search? Use Big-O notation.
 
@@ -98,7 +72,7 @@ Implement it.
 
 [See the answer](solutions/algorithms/binary-search.js)
 
-#### 5. Linked Lists
+#### 2. Linked Lists
 
 Given the following implementation of a Linked List node:
 
@@ -115,7 +89,7 @@ Write code to remove duplicates from an unsorted linked list given the first nod
 
 FOLLOW UP: How would you do this without access to a buffer?
 
-#### 6. Binary Tree Inversion
+#### 3. Binary Tree Inversion
 
 Given the following implementation of a binary tree node:
 
@@ -132,13 +106,13 @@ Write a function that takes the root element of the tree and inverts the tree.
 
 [See the answer](solutions/algorithms/binary-tree-inversion.js)
 
-#### 7. Breadth First Search
+#### 4. Breadth First Search
 
 Given a graph represented as an adjacency list and the node to start with, return an array of the graph's nodes in depth first order
 
 [See the answer](solutions/algorithms/breadth-first-search.js)
 
-#### 8. N Degrees of Separation
+#### 5. N Degrees of Separation
 
 Imagine you work on a social network. People in the social network are represented as objects, where each object has the following properties:
 
@@ -158,7 +132,7 @@ Write a function that can determine the degrees of separation between two people
 
 [See the answer](solutions/algorithms/n-degrees-of-separation.js)
 
-#### 9. Combination Sum
+#### 6. Combination Sum
 
 Given an array of distinct integers `candidates` and a target integer `target`, return a list of all unique combinations of `candidates` values where the chosen values sum to `target`.
 
