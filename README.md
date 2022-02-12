@@ -4,6 +4,8 @@ This repository is a compilation of useful interview questions for web developer
 
 Click through the link at the bottom of each problem to see the solution. All solutions are implemented in JavaScript.
 
+To practice problems, clear the solution for the problem you want to practice, run `npm run test:watch`, and fill in the function to make the tests for your particular problem pass.
+
 ## General Web Questions
 
 #### 1. Internet Protocols
