@@ -2,7 +2,7 @@
  * Write a function that finds all pairs of integers in an integer array that sum to n
  */
 
-export default function findSumPairs(data, n) {
+export function findSumPairs(data, n) {
   const found = {};
   const results = [];
   for (let i = 0; i < data.length; i++) {

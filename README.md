@@ -190,6 +190,21 @@ Assume that anything surrounding the 2d array is water.
 [See the answer](solutions/algorithms/number-of-islands.js)
 
 
+#### 10. Longest Consecutive Sequence
+
+Given an **UNSORTED** array of integers nums, return the length of the longest consecutive sequence of integers.
+
+The algorith must run in O(n) time.
+
+Example 1:
+
+```
+Input: nums = [100, 4, 200, 1, 3, 2]
+Output: 4
+Explanation: The longest consecutive sequence of integers that can be created from the list is [1, 2, 3, 4], which has a length of 4 - our answer.
+```
+
+
 ## Logic / Brain Teasers
 
 #### 1. Fizzbuzz
