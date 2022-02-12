@@ -8,7 +8,7 @@ What is the complexity of the bubble sort algorithm? Use Big-O notation.
 
 Implement it.
 
-[See the answer](solutions/algorithms/bubble-sort.js)
+[See the answer](solutions/bubble-sort.js)
 
 
 #### 2. Merge Sort
@@ -17,7 +17,7 @@ What is the complexity of the merge sort algorithm? Use Big-O notation.
 
 Implement it.
 
-[See the answer](solutions/algorithms/merge-sort.js)
+[See the answer](solutions/merge-sort.js)
 
 #### 3. Quick Sort
 
@@ -25,4 +25,4 @@ What is the complexity of the quick sort algorithm? Use Big-O notation.
 
 Implement it.
 
-[See the answer](solutions/algorithms/quick-sort.js)
+[See the answer](solutions/quick-sort.js)
