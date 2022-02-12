@@ -2,7 +2,7 @@
   "extends": "airbnb",
   "esversion": 6,
   "env": {
-    "mocha": true
+    "jest": true
   },
   "capIsNew": false
 }

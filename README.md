@@ -263,6 +263,64 @@ Write a function that can determine the degrees of separation between two people
 
 [See the answer](solutions/logic/n-degrees-of-separation.js)
 
+#### 13. Sum Pairs
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
+
+Example 1:
+
+```
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
+```
+
+Example 2:
+
+```
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+```
+
+Example 3:
+
+```
+Input: nums = [3,3], target = 6
+Output: [0,1]
+```
+
+
+[See the answer](solutions/logic/sum-pairs.js)
+
+#### 14. K Closest Elements
+
+Given a sorted integer array arr, two integers k and x, return the k closest integers to x in the array. The result should also be sorted in ascending order.
+
+An integer a is closer to x than an integer b if:
+
+    |a - x| < |b - x|, or
+    |a - x| == |b - x| and a < b
+
+Example 1:
+
+```
+Input: arr = [1,2,3,4,5], k = 4, x = 3
+Output: [1,2,3,4]
+```
+
+Example 2:
+
+```
+Input: arr = [1,2,3,4,5], k = 4, x = -1
+Output: [1,2,3,4]
+```
+
+[See the answer](solutions/logic/k-closest-elements.js)
+
 
 ## Systems Design
 
