@@ -1,4 +1,4 @@
-import { combinationSum } from '../../solutions/logic/combination-sum';
+import { combinationSum } from '../../solutions/algorithms/combination-sum';
 
 /* Test Cases */
 describe('Logic: Combination Sum', () => {

@@ -108,11 +108,17 @@ Write a function that takes the root element of the tree and inverts the tree.
 
 #### 4. Breadth First Search
 
-Given a graph represented as an adjacency list and the node to start with, return an array of the graph's nodes in depth first order
+Given a graph represented as an adjacency list and the node to start with, return an array of the graph's nodes in breadth first order
 
 [See the answer](solutions/algorithms/breadth-first-search.js)
 
-#### 5. N Degrees of Separation
+#### 5. Depth First Search
+
+Given a graph represented as an adjacency list and the node to start with, return an array of the graph's nodes in depth first order
+
+[See the answer](solutions/algorithms/depth-first-search.js)
+
+#### 6. N Degrees of Separation
 
 Imagine you work on a social network. People in the social network are represented as objects, where each object has the following properties:
 
@@ -132,13 +138,44 @@ Write a function that can determine the degrees of separation between two people
 
 [See the answer](solutions/algorithms/n-degrees-of-separation.js)
 
-#### 6. Combination Sum
+#### 7. Combination Sum
 
 Given an array of distinct integers `candidates` and a target integer `target`, return a list of all unique combinations of `candidates` values where the chosen values sum to `target`.
 
 A candidate can be reused an unlimited number of times in a combination that sums to the `target`, e.g. if candidates is `[2]` and target is 4, `[[2,2]]` is an acceptable answer.
 
 [See the answer](solutions/algorithms/combination-sum.js)
+
+#### 8. Course Schedule
+
+There are a total of `numCourses` you must take to graduate, labeled from 0 to `numCourses - 1`. You are given an array of `prerequisites` where `prerequisites[i] = [a, b]` indicates you must take course b first if you want to take course a.
+
+All the pairs in prerequisites are unique.
+
+For example, the pair [0, 1] means you need to take course 1 first before you can take course 0.
+
+Return true if all courses can be finished. Otherwise return false.
+
+Example 1:
+
+```
+Input: numCourses = 2, prerequisites = [[1, 0]]
+Output: true
+
+There are a total of 2 courses to take. Its possible to take course 0, then course 1, so it is possible to take all courses.
+
+```
+
+Example 2:
+
+```
+Input: numCourses = 2, prerequisites = [[1, 0], [0, 1]]
+Output: false
+
+You can't take course 1 without taking course 0, and you can't take course 0 without taking course one, so it is not possible to finish your courses.
+```
+
+[See the answer](solutions/algorithms/course-schedule.js)
 
 
 ## Logic / Brain Teasers

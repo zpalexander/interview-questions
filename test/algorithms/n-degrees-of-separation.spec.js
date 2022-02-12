@@ -1,4 +1,4 @@
-import { getNDegreesOfSeparation } from '../../solutions/logic/n-degrees-of-separation';
+import { getNDegreesOfSeparation } from '../../solutions/algorithms/n-degrees-of-separation';
 
 class Person {
     constructor(id, friends) {

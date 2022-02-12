@@ -5,7 +5,7 @@
  */
 
 /* Dependencies */
-import { hasAllUniques } from '../../solutions/javascript/string-manipulation';
+import { hasAllUniques } from '../../solutions/javascript/all-unique-characters';
 
 /* Test Cases */
 describe('JavaScript: String Manipulation - hasAllUniques', () => {

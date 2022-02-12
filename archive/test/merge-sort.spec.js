@@ -5,7 +5,7 @@
  */
 
 /* Dependencies */
-import mergeSort from '../../solutions/algorithms/merge-sort';
+import mergeSort from '../solutions/merge-sort';
 
 /* Test Cases */
 describe('Algorithms: Merge Sort', () => {

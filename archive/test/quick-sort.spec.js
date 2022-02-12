@@ -5,7 +5,7 @@
  */
 
 /* Dependencies */
-import quickSort from '../../solutions/algorithms/quick-sort';
+import quickSort from '../solutions/quick-sort';
 
 /* Test Cases */
 describe('Algorithms: Quick Sort', () => {

@@ -5,7 +5,7 @@
  */
 
 /* Dependencies */
-import bubbleSort from '../../solutions/algorithms/bubble-sort';
+import bubbleSort from '../solutions/bubble-sort';
 
 /* Test Cases */
 describe('Algorithms: Bubble Sort', () => {

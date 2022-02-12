@@ -4,7 +4,8 @@
   "description": "Sample technical interview questions for web developers",
   "main": "README.md",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
