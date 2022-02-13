@@ -12,25 +12,21 @@ export function totalTime(timecards) {
     timecards.sort((a, b) => a[0] - b[0]);
 
     let total = 0;
-    let maxPrev = 0;
+    let maxPreviousStart = 0;
 
+    timecards.forEach(card => {
+        const cardStart = card[0];
+        const cardEnd = card[1];
 
-    for (let i = 0; i < timecards.length; i++) {
-        let item = timecards[i];
-        let start = item[0];
-        let end = item[1];
-
-        if (start < maxPrev) {
-            start = maxPrev;
+        let start = cardStart;
+        if (maxPreviousStart > cardStart) {
+            start = maxPreviousStart;
         }
 
-        let duration = end - start;
+        total = total + (cardEnd - start);
 
-        if (duration > 0) {
-            total += duration;
-            maxPrev = end;
-        }
-    }
+        maxPreviousStart = cardEnd;
+    });
 
     return total;
 }

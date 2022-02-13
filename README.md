@@ -204,6 +204,29 @@ Output: 4
 Explanation: The longest consecutive sequence of integers that can be created from the list is [1, 2, 3, 4], which has a length of 4 - our answer.
 ```
 
+[See the answer](solutions/algorithms/longest-consecutive-sequence.js)
+
+#### 11. Word Search
+
+Given a 2d array of letters `board` and a string `word`, return true if the word can be built from letters in the grid.
+
+The word can be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once.
+
+Example 1:
+
+```
+Input:
+board = [
+    ['A', 'B', 'C', 'E'],
+    ['S', 'F', 'C', 'S'],
+    ['A', 'D', 'E', 'E'],
+];
+word = 'ABCCED';
+Output: true
+```
+
+[See the answer](solutions/algorithms/word-search.js)
+
 
 ## Logic / Brain Teasers
 
