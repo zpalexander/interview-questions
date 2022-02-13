@@ -8,7 +8,7 @@ import { totalTime } from '../../solutions/logic/frankenzombie';
 /* Test Cases */
 describe('Logic: Frankenzombie', () => {
   it('should handle a simple list', () => {
-    const sampleInput = [[1, 3], [3, 6]];
+    const sampleInput = [[1, 3], [2, 6]];
     const expectedResult = 5;
     const actualResult = totalTime(sampleInput);
     expect(actualResult).toEqual(expectedResult);
