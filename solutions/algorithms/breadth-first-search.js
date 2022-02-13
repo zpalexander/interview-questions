@@ -9,30 +9,30 @@
 import Queue from '../../test/helpers/Queue';
 
 export default function bfs(graph, source) {
-  // Initialize working variables
-  const output = [];
-  const visited = [];
-  const queue = Queue();
-  let current;
-  output.push(source);
-  queue.enqueue(source);
+    // Initialize working variables
+    const output = [];
+    const visited = [];
+    const queue = Queue();
+    let current;
+    output.push(source);
+    queue.enqueue(source);
 
-  for (let i = 0; i < graph.length; i++) {
-    visited.push(false);
-  }
+    for (let i = 0; i < graph.length; i++) {
+        visited.push(false);
+    }
 
-  // While the queue isn't empty, traverse
-  while (!queue.isEmpty()) {
-    current = queue.dequeue();
-    visited[current] = true;
-    graph[current].forEach(function(node) {
-      if (!visited[node]) {
-        output.push(node);
-        queue.enqueue(node);
-        visited[node] = true;
-      }
-    });
-  }
+    // While the queue isn't empty, traverse
+    while (!queue.isEmpty()) {
+        current = queue.dequeue();
+        visited[current] = true;
+        graph[current].forEach((node) => {
+            if (!visited[node]) {
+                output.push(node);
+                queue.enqueue(node);
+                visited[node] = true;
+            }
+        });
+    }
 
-  return output;
+    return output;
 }

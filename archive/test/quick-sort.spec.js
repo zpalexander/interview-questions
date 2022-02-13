@@ -9,7 +9,6 @@ import quickSort from '../solutions/quick-sort';
 
 /* Test Cases */
 describe('Algorithms: Quick Sort', () => {
-
     it('should return original array for lengths of 0 and 1', () => {
         const emptyArray = [];
         const oneItemArray = [1];
@@ -22,5 +21,4 @@ describe('Algorithms: Quick Sort', () => {
         const sortedArr = [-1, 1, 4, 4, 6, 8, 9, 10];
         expect(quickSort(arr)).toEqual(sortedArr);
     });
-
 });

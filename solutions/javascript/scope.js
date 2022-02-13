@@ -1,18 +1,20 @@
+/* eslint-disable */
+
 /**
  * What will the result of the following be?
  */
 
-var User = {
-  count: 1,
-  getCount: function() {
-    return this.count;
-  }
+const User = {
+    count: 1,
+    getCount() {
+        return this.count;
+    },
 };
 
-console.log(User.getCount());   // Prints 1
+console.log(User.getCount()); // Prints 1
 
 var func = User.getCount;
-console.log(func());            // Prints undefined
+console.log(func()); // Prints undefined
 
 /**
  * How would you ensure that the context of func() is always
@@ -20,4 +22,6 @@ console.log(func());            // Prints undefined
  */
 
 var func = User.getCount.bind(User);
-console.log(func())             // Prints 1
+console.log(func()); // Prints 1
+
+/* eslint-enable */

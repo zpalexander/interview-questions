@@ -2,30 +2,31 @@ import { getNDegreesOfSeparation } from '../../solutions/algorithms/n-degrees-of
 
 class Person {
     constructor(id, friends) {
-        this._id = id;
-        this._friends = friends;
+        this.id = id;
+        this.friends = friends;
     }
 
     getId() {
-        return this._id;
+        return this.id;
     }
 
     getFriends() {
-        return this._friends;
+        return this.friends;
     }
 
     setFriends(friends) {
-        this._friends = friends;
+        this.friends = friends;
     }
 }
 
 // Create people
 const Joe = new Person('Joe', []);
 const Sue = new Person('Sue', []);
-const Mary = new Person('Mary', [])
+const Mary = new Person('Mary', []);
 const Gene = new Person('Gene', []);
 const Fred = new Person('Fred', []);
 const Feldman = new Person('Feldman', []);
+// eslint-disable-next-line
 const Artemis = new Person('Artemis', []);
 
 // Create network
@@ -33,7 +34,7 @@ Joe.setFriends([Sue, Mary, Gene]);
 Sue.setFriends([Joe]);
 Mary.setFriends([Joe, Feldman]);
 Gene.setFriends([Joe, Fred]);
-Fred.setFriends([Gene, Feldman])
+Fred.setFriends([Gene, Feldman]);
 Feldman.setFriends([Mary, Fred]);
 
 describe('Logic - N Degrees of Separation', () => {

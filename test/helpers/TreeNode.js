@@ -5,7 +5,7 @@
  */
 
 export default function TreeNode(val) {
-    var node = {};
+    const node = {};
     node.val = val;
     node.left = node.right = null;
     return node;

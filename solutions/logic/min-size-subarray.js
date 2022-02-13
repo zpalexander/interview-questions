@@ -10,7 +10,6 @@ export function getMinSizeSubarray(target, nums) {
             minRange = Math.min(minRange, right - left + 1);
             currentTotal = currentTotal - nums[left];
             left++;
-
         }
     }
 

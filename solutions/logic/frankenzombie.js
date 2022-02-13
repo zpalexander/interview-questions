@@ -31,5 +31,3 @@ export function totalTime(timecards) {
     return total;
 }
 
-
-

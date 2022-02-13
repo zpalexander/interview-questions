@@ -7,24 +7,24 @@
  */
 
 export default function dfs(inputGraph, inputSource) {
-  const output = [];
-  const visited = [];
+    const output = [];
+    const visited = [];
 
-  for (let i = 0; i < inputGraph.length; i++) {
-    visited[i] = false;
-  }
-
-  function doDFS(graph, source) {
-    output.push(source);
-    visited[source] = true;
-    for (let j = 0; j < graph[source].length; j++) {
-      if (!visited[graph[source][j]]) {
-        doDFS(graph, graph[source][j]);
-      }
+    for (let i = 0; i < inputGraph.length; i++) {
+        visited[i] = false;
     }
-  }
 
-  doDFS(inputGraph, inputSource);
+    function doDFS(graph, source) {
+        output.push(source);
+        visited[source] = true;
+        for (let j = 0; j < graph[source].length; j++) {
+            if (!visited[graph[source][j]]) {
+                doDFS(graph, graph[source][j]);
+            }
+        }
+    }
 
-  return output;
+    doDFS(inputGraph, inputSource);
+
+    return output;
 }

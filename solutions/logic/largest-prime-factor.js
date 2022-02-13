@@ -3,13 +3,13 @@
  */
 
 export default function greatestPrimeFactor(n) {
-  let i = 2;
-  while (i <= n) {
-    if (n % i === 0) {
-      n = n / i;
-    } else {
-      i++;
+    let i = 2;
+    while (i <= n) {
+        if (n % i === 0) {
+            n = n / i;
+        } else {
+            i++;
+        }
     }
-  }
-  return i;
+    return i;
 }

@@ -13,10 +13,10 @@ export function wordSearch(board, word) {
     let containsWord = false;
 
     function dfsHelper(row, column, currentLetterIndex, visited) {
-        // Base case #1:
-        // If our current letter index says we've already found all
-        // the letters, it means that the word exists in the board
-        // so return true
+    // Base case #1:
+    // If our current letter index says we've already found all
+    // the letters, it means that the word exists in the board
+    // so return true
         if (currentLetterIndex === letterSequence.length) {
             containsWord = true;
             return true;

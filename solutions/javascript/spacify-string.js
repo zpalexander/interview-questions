@@ -3,9 +3,9 @@
  * Talk about this practice as it relates to building real applications.
  */
 
-String.prototype.spacify = function() {
-  return this.split('').join(' ');
-}
+String.prototype.spacify = function () {
+    return this.split('').join(' ');
+};
 
 // Developers should never modify JavaScript native prototypes.
 // Modifying natives can cause forward and backward compatibility problems

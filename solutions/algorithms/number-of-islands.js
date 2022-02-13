@@ -1,5 +1,5 @@
 export function numberOfIslands(grid) {
-    let numberOfIslands = 0;
+    let numberOfIslandsCount = 0;
 
     function dfsHelper(row, column) {
         if (grid[row][column] === 0) return;
@@ -27,11 +27,11 @@ export function numberOfIslands(grid) {
     for (let row = 0; row < grid.length; row++) {
         for (let column = 0; column < grid[row].length; column++) {
             if (grid[row][column] === 1) {
-                numberOfIslands++;
+                numberOfIslandsCount++;
                 dfsHelper(row, column);
             }
         }
     }
 
-    return numberOfIslands;
+    return numberOfIslandsCount;
 }

@@ -8,8 +8,7 @@
 import { hasAllUniques } from '../../solutions/javascript/all-unique-characters';
 
 /* Test Cases */
-describe('JavaScript: String Manipulation - hasAllUniques', () => {
-
+describe('hasAllUniques', () => {
     it('should default handle string lengths of 0 and 1', () => {
         const emptyStr = '';
         const oneCharStr = 'a';
@@ -23,5 +22,4 @@ describe('JavaScript: String Manipulation - hasAllUniques', () => {
         expect(hasAllUniques(uniqueStr)).toBe(true);
         expect(hasAllUniques(dupeStr)).toBe(false);
     });
-
 });

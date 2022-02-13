@@ -1,6 +1,6 @@
 export function findLongestConsecutiveSequence(nums) {
     let longestSequence = 0;
-    let numberMap = {};
+    const numberMap = {};
 
     nums.forEach(num => {
         numberMap[num] = true;

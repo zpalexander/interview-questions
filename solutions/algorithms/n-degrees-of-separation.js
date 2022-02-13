@@ -1,3 +1,9 @@
+const Vertex = (node, distanceFromStart) => ({
+    node,
+    distanceFromStart,
+});
+
+
 export function getNDegreesOfSeparation(startingPerson, targetId) {
     const visitedIds = [];
     const vertexQueue = [];
@@ -26,8 +32,3 @@ export function getNDegreesOfSeparation(startingPerson, targetId) {
 
     return -1;
 }
-
-const Vertex = (node, distanceFromStart) => ({
-    node,
-    distanceFromStart,
-});

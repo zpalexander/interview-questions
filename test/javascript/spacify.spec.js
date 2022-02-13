@@ -8,8 +8,7 @@
 import spacify from '../../solutions/javascript/spacify';
 
 /* Test Cases */
-describe('JavaScript: Spacify', () => {
-
+describe('Spacify', () => {
     it('should return original string for lengths 0 and 1', () => {
         const emptyStr = '';
         const oneLetterStr = 'a';
@@ -28,5 +27,4 @@ describe('JavaScript: Spacify', () => {
         const expectedResult = 'a b c   d e f';
         expect(spacify(exampleStr)).toEqual(expectedResult);
     });
-
 });

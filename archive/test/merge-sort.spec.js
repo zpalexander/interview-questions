@@ -9,7 +9,6 @@ import mergeSort from '../solutions/merge-sort';
 
 /* Test Cases */
 describe('Algorithms: Merge Sort', () => {
-
     it('should return original array for lengths of 0 and 1', () => {
         const emptyArray = [];
         const oneItemArray = [1];
@@ -22,7 +21,5 @@ describe('Algorithms: Merge Sort', () => {
         const sortedArr = [-1, 1, 4, 4, 6, 8, 9, 10];
         expect(mergeSort(arr)).toEqual(sortedArr);
     });
-
 });
-
 

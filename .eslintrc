@@ -1,8 +1,16 @@
 {
-  "extends": "airbnb",
-  "esversion": 6,
-  "env": {
-    "jest": true
-  },
-  "capIsNew": false
+    "extends": "airbnb",
+    "env": {
+        "jest": true
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "max-len": ["error", 150],
+        "no-param-reassign": "off",
+        "new-cap": "off",
+        "func-names": "off",
+        "no-extend-native": "off",
+        "consistent-return": "off",
+
+    }
 }

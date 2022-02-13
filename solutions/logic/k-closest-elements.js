@@ -1,5 +1,5 @@
 export function kClosestElements(arr, k, x) {
-    const topK = [];
+    let topK = [];
     const topKDiffs = [];
 
     for (let i = 0; i < arr.length; i++) {

@@ -22,9 +22,9 @@ export function courseSchedule(numCourses, prerequisites) {
     // be completed
 
     function dfsHelper(course) {
-        // Base Case #1:
-        // If the course has already been visited, we have detected
-        // a circular dependency, which means the schedule cannot be completed
+    // Base Case #1:
+    // If the course has already been visited, we have detected
+    // a circular dependency, which means the schedule cannot be completed
         if (visitedSet[course] === true) return false;
 
         // Base Case #2:
