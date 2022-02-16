@@ -348,7 +348,7 @@ Output: [0,1]
 
 [See the answer](solutions/logic/sum-pairs.js)
 
-#### 14. K Closest Elements
+#### 12. K Closest Elements
 
 Given a sorted integer array arr, two integers k and x, return the k closest integers to x in the array. The result should also be sorted in ascending order.
 
@@ -372,6 +372,33 @@ Output: [1,2,3,4]
 ```
 
 [See the answer](solutions/logic/k-closest-elements.js)
+
+#### 13. Two Sum
+
+Given an array of integers `nums` and an integer `target`, return the indices of the two numbers such that they add up to `target`.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+Example 1:
+
+```
+Input: nums = [2, 7, 11, 15], target = 9
+Output: [0, 1]
+```
+
+Example 2:
+
+```
+Input: nums = [3, 4, 2], target = 6
+Output: [1, 2]
+```
+
+Example 3:
+
+```
+Input: nums = [3, 3], target = 6
+Output: [0, 1]
+```
 
 
 ## Systems Design
